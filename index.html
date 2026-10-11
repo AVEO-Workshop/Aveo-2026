@@ -142,6 +142,10 @@
   .tk .l{font-size:13.5px;color:var(--ink-2);margin-top:6px}
   .tk .t{font-size:11px;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
   .note{margin-top:22px;font-size:13.5px;color:var(--ink-3)}
+  .joinbox{margin-top:32px;border:1px solid var(--line);background:var(--paper-2);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .joinbox h3{margin-top:4px}
+  .joinbox .quiet{margin-top:8px;font-size:14.5px;max-width:48ch}
+  .joinbox .btn{flex-shrink:0}
 
   /* cfp */
   .cfp{display:grid;grid-template-columns:1.1fr .9fr;gap:48px}
@@ -163,11 +167,11 @@
   .tba p{color:var(--ink-2);font-size:15px}
 
   /* people */
-  .people{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+  .people{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px}
   .person{padding-top:16px;border-top:1px solid var(--ink)}
   .photo{position:relative;width:100%;aspect-ratio:4/5;background:var(--paper-2);overflow:hidden;margin-bottom:14px;border:1px solid var(--line)}
   .photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9)}
-  .photo .init{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Instrument Serif",serif;font-size:64px;color:var(--ink-3);letter-spacing:-.02em}
+  .photo .init{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Instrument Serif",serif;font-size:40px;color:var(--ink-3);letter-spacing:-.02em}
   .photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--accent)}
   .photo.has img + .init{display:none}
   .person .name{font-family:"Instrument Serif",serif;font-size:24px;line-height:1.1}
@@ -330,6 +334,14 @@
       <div class="tk"><div class="d">21 Dec 2026</div><div class="l">Workshop day</div><div class="t mono">ISI Kolkata</div></div>
     </div>
     <p class="note">Dates marked tentative will be confirmed with the ICVGIP workshop chairs. All deadlines are Anywhere on Earth.</p>
+    <div class="joinbox">
+      <div>
+        <p class="eyebrow">Stay in the loop</p>
+        <h3>Join the mailing list</h3>
+        <p class="quiet">Get the call for papers, speaker announcements, and challenge details as soon as they are posted.</p>
+      </div>
+      <a class="btn primary" href="mailto:us4decaich@gmail.com?subject=AVEO%202026%20mailing%20list&body=Please%20add%20me%20to%20the%20AVEO%202026%20workshop%20mailing%20list.%0A%0AName%3A%0AAffiliation%3A">Request to join →</a>
+    </div>
   </div>
 </section>
 
@@ -343,7 +355,8 @@
           <li>Write it in the official ICVGIP 2026 template, anonymized.</li>
           <li>Submit on OpenReview (link posted when the call opens).</li>
           <li>Reviewed by computer vision and Earth observation experts.</li>
-          <li>Accepted papers: short oral plus archival proceedings.</li>
+          <li>Choose an archival or non-archival track at submission.</li>
+          <li>Accepted papers are presented as a short oral.</li>
         </ol>
       </div>
       <div class="specs">
@@ -351,7 +364,7 @@
         <div><b>Template</b><span>Official ICVGIP 2026 paper template</span></div>
         <div><b>Review</b><span>Double blind, multiple reviewers per paper</span></div>
         <div><b>Platform</b><span>OpenReview (link to follow)</span></div>
-        <div><b>Proceedings</b><span>Archival, via the ICVGIP 2026 workshop proceedings</span></div>
+        <div><b>Tracks</b><span>Archival, in the ICVGIP 2026 workshop proceedings, or non-archival, for work under review or already published elsewhere</span></div>
         <div><b>Presentation</b><span>Short oral by at least one registered author</span></div>
       </div>
     </div>
@@ -361,27 +374,16 @@
 <section id="challenge">
   <div class="wrap">
     <div class="head"><p class="eyebrow">Challenge</p><h2>Geospatial model-making challenge</h2></div>
-    <div class="chal">
-      <div class="measure">
-        <span class="tag">Details announced with the call</span>
-        <p class="quiet" style="margin-top:14px">Adapt any public foundation or embedding model to a geospatial task. Scoring is on held-out regions, so geographic generalization decides the leaderboard.</p>
-      </div>
-      <div>
-        <p class="eyebrow">What to expect</p>
-        <ul>
-          <li>A released training split and a spatially disjoint test split</li>
-          <li>Freedom to use any public pretrained backbone or embedding</li>
-          <li>A short technical report from each participating team</li>
-          <li>Top entries present at the workshop</li>
-        </ul>
-      </div>
+    <div class="tba">
+      <span class="tba-label mono">Details to be announced</span>
+      <p>A hands-on challenge on a geospatial dataset is planned alongside the paper track. Dataset, task, and rules will be posted here closer to the call.</p>
     </div>
   </div>
 </section>
 
 <section id="speakers">
   <div class="wrap">
-    <div class="head"><p class="eyebrow">Invited speakers</p><h2>Voices from both communities</h2></div>
+    <div class="head"><p class="eyebrow">Invited speakers</p><h2>Speakers</h2></div>
     <div class="tba">
       <span class="tba-label mono">To be announced</span>
       <p>Invited speakers from vision foundation modeling and Earth observation will be confirmed and posted here as the program comes together.</p>
@@ -391,22 +393,11 @@
 
 <section id="schedule">
   <div class="wrap">
-    <div class="head"><p class="eyebrow">Tentative schedule</p><h2>Sunday, 21 December 2026</h2></div>
-    <table class="sched">
-      <tr><td>09:00–09:15</td><td class="k">Opening and framing</td><td>Why scale and data scarcity, and what the day should produce</td></tr>
-      <tr><td>09:15–10:00</td><td class="k">Invited talk I</td><td>Foundation models for Earth observation</td></tr>
-      <tr><td>10:00–11:00</td><td class="k">Contributed orals I</td><td>Adaptation and parameter-efficient fine-tuning</td></tr>
-      <tr class="brk"><td>11:00–11:20</td><td>Break</td><td></td></tr>
-      <tr><td>11:20–12:05</td><td class="k">Invited talk II</td><td>Multimodal and multi-sensor representations</td></tr>
-      <tr><td>12:05–13:00</td><td class="k">Contributed orals II</td><td>Large-scale mapping and generalization</td></tr>
-      <tr class="brk"><td>13:00–14:00</td><td>Lunch</td><td></td></tr>
-      <tr><td>14:00–14:45</td><td class="k">Invited talk III</td><td>Operational Earth observation and decision support</td></tr>
-      <tr><td>14:45–15:30</td><td class="k">Challenge session</td><td>Results, top-team presentations, lessons on geographic transfer</td></tr>
-      <tr class="brk"><td>15:30–15:50</td><td>Break</td><td></td></tr>
-      <tr><td>15:50–16:45</td><td class="k">Moderated discussion</td><td>Model developers and domain scientists: where do current models fall short?</td></tr>
-      <tr><td>16:45–17:00</td><td class="k">Closing</td><td>Shared agenda and next steps</td></tr>
-    </table>
-    <p class="note">Session order and titles will be finalized after the review process.</p>
+    <div class="head"><p class="eyebrow">Schedule</p><h2>Sunday, 21 December 2026</h2></div>
+    <div class="tba">
+      <span class="tba-label mono">Program schedule to be decided</span>
+      <p>The day will combine invited talks, contributed orals, and the challenge session. The detailed running order will be posted here once the program is finalized.</p>
+    </div>
   </div>
 </section>
 
