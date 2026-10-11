@@ -1,8 +1,8 @@
 Organizer portrait photos (JPG, roughly 4:5):
   roy.jpg      in place, from swalpa.github.io
   kaushik.jpg  in place, from sk-2103.github.io
-  aich.jpg     not yet added (no confirmed source)
-  mandal.jpg   not yet added (no confirmed source)
+  aich.jpg     in place
+  mandal.jpg   in place
 Until a file exists, the card shows initials.
 All four names link to the organizer's LinkedIn profile.
 
