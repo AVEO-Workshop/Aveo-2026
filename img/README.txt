@@ -1,7 +1,10 @@
-Portrait photos (JPG, roughly 4:5):
-  ghamisi.jpg  chanussot.jpg  li.jpg
+Organizer portrait photos (JPG, roughly 4:5):
   aich.jpg  roy.jpg  mandal.jpg  kaushik.jpg
 Until a file exists, the card shows initials.
+
+Invited speakers are marked "To be announced" on the site until
+confirmed. Once confirmed, restore the speaker cards in index.html
+and drop their portraits here.
 
 Hero rotation (NASA Earth Observatory, public domain):
   hero.jpg      South India at night, ISS, Jan 2015
