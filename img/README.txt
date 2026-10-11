@@ -1,6 +1,10 @@
 Organizer portrait photos (JPG, roughly 4:5):
-  aich.jpg  roy.jpg  mandal.jpg  kaushik.jpg
+  roy.jpg      in place, from swalpa.github.io
+  kaushik.jpg  in place, from sk-2103.github.io
+  aich.jpg     not yet added (no confirmed source)
+  mandal.jpg   not yet added (no confirmed source)
 Until a file exists, the card shows initials.
+All four names link to the organizer's LinkedIn profile.
 
 Invited speakers are marked "To be announced" on the site until
 confirmed. Once confirmed, restore the speaker cards in index.html
