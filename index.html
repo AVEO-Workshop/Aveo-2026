@@ -45,6 +45,10 @@
   .measure{max-width:66ch}
 
   /* nav */
+  .topbar{background:var(--ink);color:var(--paper)}
+  .topbar .wrap{display:flex;justify-content:flex-end;padding:7px 24px;font-size:12.5px}
+  .topbar a{color:var(--paper);opacity:.85}
+  .topbar a:hover{opacity:1}
   .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
   .brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:600;font-size:14px;letter-spacing:.02em}
@@ -229,6 +233,9 @@
 </head>
 <body>
 
+<div class="topbar mono">
+  <div class="wrap"><a href="mailto:contact.aveo2026@gmail.com">contact.aveo2026@gmail.com</a></div>
+</div>
 <nav class="nav">
   <div class="wrap">
     <a class="brand" href="#top"><i></i>AVEO 2026 <span class="brand-sub">@ ICVGIP</span></a>
